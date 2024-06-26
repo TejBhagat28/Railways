@@ -1,0 +1,112 @@
+<html>
+<head>
+<TITLE>TICKET BOOKING</TITLE>
+<style>
+p{text-align: center;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#confirmation {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e7f7e7;
+    border: 1px solid #a7d7a7;
+    color: #333;
+}
+
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Railway Ticket Booking</h2>
+        <form id="bookingForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          
+           <label for="age">Age:</label>
+            <input type="text" id="age" name="age" required>
+<br>
+           Type Of Seat:<br> <select name="Type of Seat" id="Type of Seat">
+	<option value="AC Executive Chair Class (EC)">EC</option>
+	<option value="AC First Class (1AC)">1AC</option>
+	<option value="AC Two Tier Class (2AC)">2AC</option>
+	<option value="AC Three Tier Class (3AC)">3AC</option>
+	<option value="AC  Chair Class (CC)">CC</option>
+	<option value="AC Second Class (EC)">2S</option>
+	<option value="AC Unreserved/General Class (G)">G</option>
+	
+</select>
+  <br>
+                  Gender:<br> <select name="Gender" id="Gender">
+	<option value="Male">Male</option>
+	<option value="Female">Female</option>
+	<option value="Others">Others</option>
+           </select>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="source">Source Station:</label>
+            <input type="text" id="source" name="source" required>
+
+            <label for="destination">Destination Station:</label>
+            <input type="text" id="destination" name="destination" required>
+
+            <label for="date">Travel Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <BR>
+<p>
+        <a href ="Pay.HTML">Book Ticket</a>
+  </p>
+      </form>
+      
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
